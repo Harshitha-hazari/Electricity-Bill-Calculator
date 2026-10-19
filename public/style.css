@@ -1,0 +1,185 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f3f6fa;
+    color: #243247;
+}
+
+.navbar {
+    background: #102b46;
+    color: white;
+    padding: 18px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.navbar h2 {
+    margin: 0;
+}
+
+.navbar nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+}
+
+.hero {
+    background: #dceeff;
+    text-align: center;
+    padding: 65px 20px;
+}
+
+.hero h1 {
+    font-size: 36px;
+}
+
+.hero p {
+    line-height: 1.7;
+}
+
+.button,
+.reset-button {
+    display: inline-block;
+    border: none;
+    border-radius: 5px;
+    padding: 12px 18px;
+    font-size: 15px;
+    cursor: pointer;
+    text-decoration: none;
+    margin-top: 15px;
+}
+
+.button {
+    background: #087f8c;
+    color: white;
+}
+
+.button:hover {
+    background: #066671;
+}
+
+.reset-button {
+    background: #e2e8f0;
+    color: #243247;
+    margin-left: 8px;
+}
+
+.card {
+    max-width: 650px;
+    margin: 35px auto;
+    padding: 28px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px #00000012;
+}
+
+label {
+    display: block;
+    margin-top: 18px;
+    margin-bottom: 7px;
+    font-weight: bold;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 5px;
+    font-size: 15px;
+    background: white;
+}
+
+.note {
+    color: #64748b;
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+.error {
+    color: #b42318;
+    margin-top: 15px;
+}
+
+.result {
+    margin-top: 25px;
+    padding: 20px;
+    border-radius: 8px;
+    background: #eefaf6;
+}
+
+.result p {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.result strong {
+    text-align: right;
+}
+
+.result hr {
+    border: 0;
+    border-top: 1px solid #b9d8ce;
+}
+
+footer {
+    background: #102b46;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+@media (max-width: 600px) {
+    .navbar {
+        padding: 16px 5%;
+    }
+
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    .card {
+        margin: 20px 12px;
+        padding: 20px;
+    }
+}
+
+@media print {
+    body * {
+        visibility: hidden;
+    }
+
+    #result,
+    #result * {
+        visibility: visible;
+    }
+
+    #result {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background: white;
+    }
+
+    #printButton {
+        display: none;
+    }
+}

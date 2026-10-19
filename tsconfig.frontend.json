@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "module": "ES2020",
+    "rootDir": "public/js",
+    "outDir": "public/js/build",
+    "strict": true,
+    "skipLibCheck": true
+  },
+  "include": [
+    "public/js/app.ts"
+  ]
+}
